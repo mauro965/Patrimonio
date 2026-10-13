@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 580" width="100%" height="100%">
+  <defs>
+    <!-- Gradientes de alta fidelidad -->
+    <linearGradient id="sigpeGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1dbf73" />
+      <stop offset="50%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+
+    <linearGradient id="sigpeGearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="sigpeWrenchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#16a34a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- 1. ICONO SUPERIOR: LIBRO ABIERTO PEQUEÑO -->
+  <g fill="url(#sigpeGreenGrad)">
+    <!-- Página izquierda -->
+    <path d="M 194,42 C 165,30 135,32 118,37 C 114,38 112,41 113,44 C 114,46 117,48 120,47 C 135,43 162,41 190,52 Z" />
+    <!-- Página derecha -->
+    <path d="M 206,42 C 235,30 265,32 282,37 C 286,38 288,41 287,44 C 286,46 283,48 280,47 C 265,43 238,41 210,52 Z" />
+    <!-- Lomo central superior -->
+    <path d="M 197,45 L 203,45 L 201,54 L 199,54 Z" />
+  </g>
+
+  <!-- 2. TIPOGRAFÍA "SIGPE" (ALTA DEFINICIÓN GEOMÉTRICA) -->
+  <text x="200" y="118" 
+        text-anchor="middle" 
+        fill="url(#sigpeGreenGrad)" 
+        font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="64" 
+        font-weight="900" 
+        letter-spacing="4"
+        style="text-shadow: 0 2px 8px rgba(22, 163, 74, 0.2);">
+    SIGPE
+  </text>
+
+  <!-- 3. CONTORNO INFERIOR DEL ESCUDO (SHIELD BASE) -->
+  <path d="M 50,420 C 50,505 130,545 200,568 C 270,545 350,505 350,420" 
+        fill="none" 
+        stroke="url(#sigpeGreenGrad)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- 4. GRAN LIBRO TÉCNICO ABIERTO (PÁGINAS Y BORDES) -->
+  <!-- Borde exterior de páginas -->
+  <g fill="none" stroke="url(#sigpeGreenGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ala izquierda exterior -->
+    <path d="M 190,440 C 130,410 70,415 45,420 L 45,195 C 75,190 135,185 190,215 Z" />
+    <!-- Ala derecha exterior -->
+    <path d="M 210,440 C 270,410 330,415 355,420 L 355,195 C 325,190 265,185 210,215 Z" />
+    
+    <!-- Capas internas de hojas (efecto profundidad de páginas) -->
+    <path d="M 60,208 C 88,203 140,200 185,225" stroke-width="5" />
+    <path d="M 340,208 C 312,203 260,200 215,225" stroke-width="5" />
+    
+    <path d="M 60,405 C 88,400 140,396 185,422" stroke-width="5" />
+    <path d="M 340,405 C 312,400 260,396 215,422" stroke-width="5" />
+  </g>
+
+  <!-- Detalles de texto en página izquierda -->
+  <g stroke="url(#sigpeGreenGrad)" stroke-width="6" stroke-linecap="round">
+    <line x1="72" y1="245" x2="110" y2="245" />
+    <line x1="72" y1="275" x2="115" y2="275" />
+    <line x1="72" y1="365" x2="115" y2="365" />
+    <line x1="72" y1="395" x2="105" y2="395" />
+  </g>
+
+  <!-- Detalles y Tilde (Checkmark) de verificación en página derecha -->
+  <g stroke="url(#sigpeGreenGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="288" y1="245" x2="328" y2="245" />
+    <line x1="285" y1="275" x2="328" y2="275" />
+    <!-- Tilde / Check de verificación patrimonial -->
+    <path d="M 285,385 L 298,398 L 328,365" stroke-width="8" stroke="url(#sigpeGreenGrad)" />
+  </g>
+
+  <!-- 5. ENGRANAJE MECÁNICO / COGWHEEL (INDUSTRIAL Y TÉCNICO) -->
+  <g fill="url(#sigpeGearGrad)">
+    <!-- 8 Dientes del engranaje con cortes simétricos precisos (radio ~78px) -->
+    <path d="
+      M 184,204 L 216,204 L 213,222 C 223,225 233,229 242,235 L 257,224 L 280,247 L 269,262 C 275,271 279,281 282,291 L 300,288 L 300,320 L 282,317 C 279,327 275,337 269,346 L 280,361 L 257,384 L 242,373 C 233,379 223,383 213,386 L 216,404 L 184,404 L 187,386 C 177,383 167,379 158,373 L 143,384 L 120,361 L 131,346 C 125,337 121,327 118,317 L 100,320 L 100,288 L 118,291 C 121,281 125,271 131,262 L 120,247 L 143,224 L 158,235 C 167,229 177,225 187,222 Z" />
+    <!-- Corona interior del engranaje -->
+    <circle cx="200" cy="304" r="54" fill="#ffffff" />
+  </g>
+
+  <!-- 6. LLAVE MECÁNICA CENTRAL (WRENCH EN COLOR VERDE SIGPE) -->
+  <g fill="url(#sigpeWrenchGrad)">
+    <!-- Cabeza fija de la llave de tuercas (Boca abierta) con apertura superior -->
+    <path d="
+      M 178,252 
+      C 165,268 162,292 172,312 
+      C 182,330 202,340 220,336 
+      C 235,332 245,320 248,306 
+      L 226,306 
+      C 224,313 218,318 210,319 
+      C 200,320 190,314 186,304 
+      C 182,294 184,282 192,274 
+      C 197,270 204,268 210,268 
+      L 210,250 
+      L 194,250
+      Z" />
+      
+    <!-- Boca opuesta de la llave y cuerpo central simétrico -->
+    <path d="
+      M 188,256 
+      L 174,272
+      C 168,285 168,300 174,312 
+      C 180,324 191,332 204,334
+      L 204,505 
+      C 200,505 195,502 194,498
+      L 194,342 
+      C 186,338 180,332 176,325
+      L 188,256 Z" opacity="0.15" fill="#000000" />
+
+    <!-- Mango / Vástago vertical principal de la llave bajando por el lomo del libro -->
+    <rect x="193" y="325" width="14" height="180" rx="3" />
+    <!-- Boca superior de la llave combinada -->
+    <path d="
+      M 188,252
+      C 174,266 170,288 178,306
+      C 186,324 204,335 222,331
+      C 234,328 243,319 247,308
+      L 228,308
+      C 225,313 220,317 214,318
+      C 204,320 195,314 191,305
+      C 186,295 188,284 195,276
+      C 200,271 207,269 214,269
+      L 214,252
+      C 205,250 195,250 188,252 Z" />
+  </g>
+
+  <!-- Curva del lomo central del libro que envuelve el mango -->
+  <path d="M 200,438 L 200,505" stroke="url(#sigpeGreenGrad)" stroke-width="8" stroke-linecap="round" />
+</svg>
